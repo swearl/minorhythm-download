@@ -41,3 +41,8 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# My ignore files and folders
+node_modules
+minorhythm/images
+minorhythm/json
