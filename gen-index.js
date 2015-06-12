@@ -153,6 +153,7 @@ for(var i = 0; i < dirs.length; i++) {
 		var date = json.date.split(" ")[0];
 		date = date.replace(/\./g,"-");
 		blog.id = id;
+		blog.json = "json/" + dirs[i] + "/" + jsons[j];
 		blog.date = date;
 		blog.title = json.title;
 		blogs.push(blog);

@@ -5,14 +5,14 @@ var http    = require('http');
 var fs      = require('fs');
 
 var url_blog = "http://minorhythm.jugem.jp/?eid="
-var id_end = 2400;
+var id_end = 7;
 var path_base ="minorhythm";
 var path_images = "images";
 var path_html = "html";
 var path_json = "json";
 
 
-var save_num = 2400;
+var save_num = 1;
 var entry_ids = [];
 var entry_images = [];
 
@@ -54,7 +54,7 @@ function download_entry(entry_id, callback) {
 				$(".service_button, #fb-root, script, style").remove();
 				$(".tb_area").remove();
 				var entry_body = $(".entry_body .jgm_entry_desc_mark").html().trim();
-				var entry_title = $(".entry_title").text();
+				var entry_title = $(".entry_title").first().text();
 				var entry_date = $(".entry_date").text();
 				var new_entry_body = parse_images(entry_body);
 				//save_entry(entry_id, entry_title, entry_date, entry_body);

@@ -1,0 +1,21 @@
+body {
+	padding-top: 10px;
+}
+
+.panel-heading h1 {
+    font-size: 20px;
+    margin: 0;
+}
+.panel-heading .title {
+    float: left;
+}
+.panel-heading .date {
+    text-align: right;
+}
+.content .pict {
+    float: right;
+}
+
+.menu .nav a {
+    padding: 0;
+}
